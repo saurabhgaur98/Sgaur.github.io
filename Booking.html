@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        body{
+            background-image: url("img/hotel.jpg");
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+            background-position: center;
+        }
+        .main{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 40px;
+            width: 350px;
+            /* background-image: url("img/hotel.jpg"); */
+            background-color: darkblue;
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px 10px rgb(0, 0, 0);
+            opacity: 0.8;
+        }
+
+        .main .in{
+            width: 240px;
+            height: 24px;
+            padding-left: 10px;
+            border-radius: 4px;
+            
+        }
+
+        label{
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .main a button{
+            width: 100px;
+            height: 30px;
+            margin-left: 140px;
+            background-color: green;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .header{
+            background-color: #f1f1f1;
+            line-height: 150px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 30px;
+            opacity: 0.6;
+
+        }
+
+        @media only screen and (max-width:1000px) {
+            .header{
+                line-height: 100px;
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width:650px){
+            .header{
+                line-height: 50px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>WELCOME TO HANGOUT HOTEL</h1>
+        
+    </div>
+
+    <form class="main">
+
+        <label for="name">Enter your first name:</label><br>
+        <input class="in" type="text" name="name" id="name" placeholder="Saurabh"><br><br>
+
+        <label for="lname">Enter your last name:</label><br>
+        <input class="in" type="text" name="lname" id="lname" placeholder="Gaur"><br><br>
+
+        <label for="id">ID Card:</label><br>
+        <input class="in" type="file" name="id" id="id"><br><br>
+
+        <label for="calendar">Booking date:</label><br>
+        <input class="in" type="date" name="calendar" id="calendar"><br><br>
+
+        <label for="calendar1">leaving date:</label><br>
+        <input class="in" type="date" name="calendar" id="calendar1"><br><br>
+
+        <label for="room-type">select room category:</label><br>
+        <select class="in" name="room-type" id="room-typre">
+            <option value="">deluxe</option>
+            <option value="">luxury</option>
+            <option value="">executive</option>
+        </select><br><br>
+
+        <label for="pay">payment method:</label><br>
+        <!-- <input type="radio" name="" id="pay"> -->
+        <label for="pay">online</label>
+        <input type="radio" name="pay" id="pay">
+        <label for="pay">offline</label>
+        <input type="radio" name="pay" id="pay"><br><br>
+
+        <a href=""><button>Pay</button></a>
+
+    </form>
+</body>
+</html>
